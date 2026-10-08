@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software | Tyler Trott</title>
+  <meta name="description" content="Software projects by Tyler Trott: at_c, EcoCheck, FLARE federated learning, machine learning theory and ATP Tour analytics.">
+  <meta name="theme-color" content="#08121f">
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Software | Tyler Trott">
+  <meta property="og:description" content="Software projects by Tyler Trott: at_c, EcoCheck, FLARE federated learning, machine learning theory and ATP Tour analytics.">
+  <meta property="og:url" content="https://wildgreen17.github.io/projects.html">
+  <meta property="og:image" content="https://wildgreen17.github.io/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/img/favicon.png" alt="" width="24" height="24">
+        Tyler Trott
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="projects.html" aria-current="page">Software</a>
+        <a class="nav-link" href="writing.html">Writing &amp; Media</a>
+        <a class="nav-link" href="tennis.html">Tennis</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn-network " href="#" data-network aria-disabled="true" title="The network sign-in link is coming soon">Network <span class="badge">Coming soon</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-head">
+      <h1>Software</h1>
+      <p class="lede">Open source work, hackathon and course projects, and research in machine learning.</p>
+    </div>
+
+    <section class="wrap section">
+      <div class="ledger">
+      <article class="entry" id="at-c">
+        <div class="entry-meta">
+          <strong>Atsign Foundation</strong>
+          <p>Open source. Work in progress.</p>
+          <p>C</p>
+        </div>
+        <div class="entry-body">
+          <h3>at_c</h3>
+          <p>The alpha C implementation of the atSDK for the at_platform. It is a work in progress and not ready for production use. The atSDK is a set of libraries for building applications on the at_platform, designed to be easy to use while giving users a high level of security and privacy.</p>
+          <h4>What I did</h4>
+          <p>I contributed the beginning of the ed25519 implementation and added test cases for RSA 4096 operability.</p>
+          <div class="btn-row">
+            <a class="btn btn-ghost" href="https://github.com/atsign-foundation/at_c" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="entry" id="ecocheck">
+        <div class="entry-meta">
+          <strong>Schulich Hacks 2023</strong>
+          <p>Schulich School of Engineering</p>
+          <ul>
+            <li>Web app: React, Tailwind</li>
+            <li>Database: Google Cloud, MySQL</li>
+            <li>API scripts and functions: Node.js, SerpAPI, Ditch Carbon</li>
+            <li>Receipt generation: Node.js</li>
+          </ul>
+        </div>
+        <div class="entry-body">
+          <h3>EcoCheck (Clean Choice)</h3>
+          <img class="media" src="assets/img/ecocheck-presentation.jpg" alt="Presentation slide for EcoCheck" loading="lazy">
+          <p>Clean Choice is a web app that suggests environmentally friendly alternatives to products you've bought. Generating a receipt creates a QR code that uses the receipt details to show the carbon footprint of your purchase and recommend greener alternatives.</p>
+          <div class="btn-row">
+            <a class="btn btn-ghost" href="https://github.com/Re-Four/EcoCheck" target="_blank" rel="noopener">View on GitHub</a>
+            <a class="btn btn-ghost" href="https://eco-check.vercel.app/dashboard/app" target="_blank" rel="noopener">Open the live demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="entry" id="flare">
+        <div class="entry-meta">
+          <strong>CSC 466, University of Victoria</strong>
+          <p>February to April 2025</p>
+          <p>SUMO, OMNeT++, Python</p>
+        </div>
+        <div class="entry-body">
+          <h3>Federated Learning for Adaptive Road Efficiency (FLARE)</h3>
+          <p>Traffic lights that aren't coordinated across a city cause delays. FLARE proposes a decentralized network of IoT devices running a federated learning framework. The devices work in a secure, self-contained network, talking only to each other and the learning algorithm, and adjust signals using real-time traffic data and inflow-outflow equations.</p>
+          <p>I built a simulation of downtown Victoria in SUMO, explored peer-to-peer network designs in OMNeT++, and documented the work in bi-weekly updates.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="CSC466Project/CSC466project.html">Read the project page</a>
+            <a class="btn btn-ghost" href="https://github.com/TylerTrott/FLARE" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="entry" id="ml-theory">
+        <div class="entry-meta">
+          <strong>Problem sheets</strong>
+          <p>Machine learning theory</p>
+        </div>
+        <div class="entry-body">
+          <h3>Machine learning theory</h3>
+          <p>Problem sheets across the topics below, completed to reinforce my understanding and application of the theory.</p>
+          <ul class="topic-list">
+            <li>PAC learning</li>
+            <li>Consistency model, perceptron, mistake bound, and a PAC learning algorithm for linear separators</li>
+            <li>Agnostic learning</li>
+            <li>Uniform convergence (finite classes), including Markov's inequality and Hoeffding's inequality</li>
+            <li>Uniform convergence (infinite classes): VC dimension</li>
+            <li>Rademacher complexity</li>
+            <li>Support vector machines, margin bounds and kernels</li>
+            <li>Boosting</li>
+            <li>Information theory: Shannon entropy and KL-divergence</li>
+            <li>Occam bounds and PAC-Bayes</li>
+            <li>Compression bounds</li>
+            <li>Active learning</li>
+            <li>Decision-theoretic online learning</li>
+            <li>Prediction with expert advice</li>
+            <li>Bandits</li>
+            <li>Stochastic and online convex optimization</li>
+            <li>Online-to-batch conversion</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry" id="atp-2022">
+        <div class="entry-meta">
+          <strong>Ontario Tech University</strong>
+          <p>Data science course</p>
+          <p>R, API scripts (Node.js)</p>
+        </div>
+        <div class="entry-body">
+          <h3>ATP Tour Analytics 2022</h3>
+          <p>I'm a big tennis fan and wanted to analyze ATP Tour data. For a data science course I analyzed 2022 ATP Tour results and built visualizations that show trends and patterns.</p>
+          <div class="btn-row">
+            <a class="btn btn-ghost" href="https://github.com/TylerTrott/ATP-Tour-Analytics-2022" target="_blank" rel="noopener">View on GitHub</a>
+            <a class="btn btn-ghost" href="projects/atp-2022-analysis.html" target="_blank" rel="noopener">Open the analysis</a>
+          </div>
+        </div>
+      </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-name">Tyler Trott</p>
+        <p>Computer scientist and former professional tennis player from Bermuda.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Software</a></li>
+        <li><a href="writing.html">Writing &amp; Media</a></li>
+        <li><a href="tennis.html">Tennis</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/tyler-t-b307b0107/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/TylerTrott" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://medium.com/@tyler.trott" target="_blank" rel="noopener" aria-label="Medium"><i class="fab fa-medium"></i></a>
+        <a href="https://www.youtube.com/@AtsignCo" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-small">
+      <div class="wrap">
+        <span>&copy; 2026 Tyler Trott</span>
+        <span>Leaf icon by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
