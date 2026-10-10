@@ -1,6 +1,6 @@
 # wildgreen17.github.io
 
-Personal portfolio site, published with GitHub Pages at https://wildgreen17.github.io/.
+Personal portfolio site, published with GitHub Pages at https://oyster-lab.dev/.
 It is plain HTML, CSS and a little JavaScript, so there is no build step.
 
 ## Pages
@@ -24,15 +24,13 @@ It is plain HTML, CSS and a little JavaScript, so there is no build step.
 - `projects/` holds the ATP Tour 2022 analysis.
 - `CSC466Project/`, `UVicInvitationals/` and `Invitationals-2026/` are older stand-alone mini-sites. They keep their own styling and link back to the main site.
 
-## Turning on the Network button
+## Project Oyster links
 
-Every "Network" button shows a "Coming soon" state until a login address is set.
-Open `assets/js/site.js`, paste the network's login URL into `networkUrl`, and commit:
+The "Project Oyster" button in the header and the Project Oyster panel on the home page link to
+https://dashboard.oyster-lab.dev, https://status.oyster-lab.dev and https://docs.oyster-lab.dev.
+To change them, search the HTML pages for `oyster-lab.dev`.
 
-```js
-var SITE_CONFIG = {
-  networkUrl: "https://your-network.example/login"
-};
-```
+## Custom domain
 
-All Network buttons then link there and the "Coming soon" label disappears.
+The site is served from https://oyster-lab.dev (see the `CNAME` file). Leave `CNAME` and the domain's DNS
+records as they are.
